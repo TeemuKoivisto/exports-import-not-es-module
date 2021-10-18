@@ -18,4 +18,4 @@ file:///.../exports-import-not-es-module/packages/client/.svelte-kit/output/serv
 import { WebsocketProvider } from "y-websocket";
 ```
 
-[screenshot](./screenshot.png)
+<img width="500" src="https://github.com/TeemuKoivisto/exports-import-not-es-module/blob/master/screenshot.png">
