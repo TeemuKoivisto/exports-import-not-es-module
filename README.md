@@ -19,3 +19,15 @@ import { WebsocketProvider } from "y-websocket";
 ```
 
 <img width="700" src="https://github.com/TeemuKoivisto/exports-import-not-es-module/blob/master/screenshot.png">
+
+The package.json in question https://github.com/yjs/y-websocket/blob/master/package.json#L28
+
+```json
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./src/y-websocket.js",
+      "require": "./dist/y-websocket.cjs"
+    }
+  },
+```
