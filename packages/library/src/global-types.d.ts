@@ -1,0 +1,27 @@
+/// <reference types="@sveltejs/kit" />
+/// <reference types="svelte" />
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+  VITE_API_URL: string | undefined
+  VITE_WS_URL: string | undefined
+}
+
+declare module 'prosemirror-example-setup' {
+  import { Plugin } from 'prosemirror-state'
+  import type { Schema } from 'prosemirror-model'
+  import type { Keymap } from 'prosemirror-commands'
+
+  export interface Options {
+    schema: Schema
+    mapKeys?: any
+    menuBar?: boolean
+    floatingMenu?: boolean
+    menuContent?: any
+    history?: boolean
+  }
+  export function buildMenuItems(schema: Schema): any
+  export function buildKeymap(schema: Schema, mapKeys?: any): Keymap
+  export function buildInputRules(schema: Schema): Plugin
+  export function exampleSetup(options: Options): Plugin[]
+}
