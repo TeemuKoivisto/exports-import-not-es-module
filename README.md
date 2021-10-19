@@ -31,3 +31,11 @@ The package.json in question https://github.com/yjs/y-websocket/blob/master/pack
     }
   },
 ```
+
+You can see that Rollup and Vite perform this bundling correctly with using:
+```
+pnpm run vite --filter @app/rollup
+pnpm run roll --filter @app/rollup
+```
+
+There is also additional problem with importing dependencies of the library from the client. I had to add the library's dependencies to the client, otherwise the bundler (rollup?) won't find them. I think pnpm's symlinks are not resolved properly.

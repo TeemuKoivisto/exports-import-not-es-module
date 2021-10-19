@@ -29,7 +29,7 @@ importers:
       yjs: 13.5.16
     devDependencies:
       '@sveltejs/adapter-static': 1.0.0-next.21
-      '@sveltejs/kit': 1.0.0-next.184_svelte@3.44.0
+      '@sveltejs/kit': 1.0.0-next.185_svelte@3.44.0
       rimraf: 3.0.2
       svelte: 3.44.0
       svelte-preprocess: 4.9.8_svelte@3.44.0+typescript@4.4.4
@@ -74,7 +74,7 @@ importers:
       '@rollup/plugin-alias': 3.1.5_rollup@2.58.0
       '@rollup/plugin-commonjs': 21.0.0_rollup@2.58.0
       '@rollup/plugin-node-resolve': 13.0.5_rollup@2.58.0
-      '@sveltejs/kit': 1.0.0-next.184_svelte@3.44.0
+      '@sveltejs/kit': 1.0.0-next.185_svelte@3.44.0
       '@types/prosemirror-model': 1.13.2
       '@types/prosemirror-state': 1.2.7
       '@types/prosemirror-transform': 1.1.4
@@ -93,6 +93,31 @@ importers:
       svelte2tsx: 0.4.7_svelte@3.44.0+typescript@4.4.4
       tslib: 2.3.1
       typescript: 4.4.4
+
+  packages/rollup:
+    specifiers:
+      '@rollup/plugin-alias': ^3.1.5
+      '@rollup/plugin-commonjs': ^21.0.0
+      '@rollup/plugin-node-resolve': ^13.0.5
+      rimraf: ^3.0.2
+      rollup: ^2.58.0
+      rollup-plugin-ts: ^1.4.7
+      typescript: ^4.4.3
+      vite: ^2.1.0
+      y-websocket: ^1.3.16
+      yjs: ^13.5.12
+    dependencies:
+      y-websocket: 1.3.17_yjs@13.5.16
+      yjs: 13.5.16
+    devDependencies:
+      '@rollup/plugin-alias': 3.1.5_rollup@2.58.0
+      '@rollup/plugin-commonjs': 21.0.0_rollup@2.58.0
+      '@rollup/plugin-node-resolve': 13.0.5_rollup@2.58.0
+      rimraf: 3.0.2
+      rollup: 2.58.0
+      rollup-plugin-ts: 1.4.7_rollup@2.58.0+typescript@4.4.4
+      typescript: 4.4.4
+      vite: 2.6.10
 
 packages:
 
@@ -1284,18 +1309,18 @@ packages:
     resolution: {integrity: sha512-B4+QoUVAaANKx+mHntG8SqF45zbj3Ct4Akg/cGauo6COyfKZRhO5OsMa+wPuT2TKJBZC4eEDK0p+p9nyQBkxKQ==}
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.184_svelte@3.44.0:
-    resolution: {integrity: sha512-bQNka3td/OMmnbDEzUTmb3czPgt/y93WOyYiT14ORq/qPewoMhEtgPikfboejdZMTJESSq06s43YXmF2MzqSSA==}
+  /@sveltejs/kit/1.0.0-next.185_svelte@3.44.0:
+    resolution: {integrity: sha512-PnXAbcgDaA9QD0w5WoLrNq6CytRVA4XfOa/b7kYGtq/xsMcHiGL23igF9Th4a5ZMe/m9zHozzeGy+uNQj+AHZA==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
-      svelte: ^3.43.0
+      svelte: ^3.44.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.30_svelte@3.44.0+vite@2.6.9
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.30_svelte@3.44.0+vite@2.6.10
       cheap-watch: 1.0.4
       sade: 1.7.4
       svelte: 3.44.0
-      vite: 2.6.9
+      vite: 2.6.10
     transitivePeerDependencies:
       - diff-match-patch
       - less
@@ -1304,7 +1329,7 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.30_svelte@3.44.0+vite@2.6.9:
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.30_svelte@3.44.0+vite@2.6.10:
     resolution: {integrity: sha512-YQqdMxjL1VgSFk4/+IY3yLwuRRapPafPiZTiaGEq1psbJYSNYUWx9F1zMm32GMsnogg3zn99mGJOqe3ld3HZSg==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
@@ -1322,7 +1347,7 @@ packages:
       require-relative: 0.8.7
       svelte: 3.44.0
       svelte-hmr: 0.14.7_svelte@3.44.0
-      vite: 2.6.9
+      vite: 2.6.10
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4051,8 +4076,8 @@ packages:
       extsprintf: 1.3.0
     dev: true
 
-  /vite/2.6.9:
-    resolution: {integrity: sha512-J3tefw9pWTxsFJtWbV+E68cZTsSxpT3AWG6AhiwFP8r9FMftDJE/6TbviL13+q4ThuLeF/3K9sarU0lIrWhrbg==}
+  /vite/2.6.10:
+    resolution: {integrity: sha512-XbevwpDJMs3lKiGEj0UQScsOCpwHIjFgfzPnFVkPgnxsF9oPv1uGyckLg58XkXv6LnO46KN9yZqJzINFmAxtUg==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
