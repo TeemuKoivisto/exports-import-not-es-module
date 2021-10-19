@@ -38,4 +38,6 @@ pnpm run vite --filter @app/rollup
 pnpm run roll --filter @app/rollup
 ```
 
+If you remove the exports block and let the `y-websocket` be resolved via `"main"` and `"module"` entries the build succeeds so I think there's something wrong with how SvelteKit resolves the dependencies.
+
 There is also additional problem with importing dependencies of the library from the client. I had to add the library's dependencies to the client, otherwise the bundler (rollup?) won't find them. I think pnpm's symlinks are not resolved properly.
